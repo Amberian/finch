@@ -1,0 +1,394 @@
+2018-07-02 06:22:36,958 - tensorflow - INFO - 
+{'batch_size': 128, 'n_epochs': 4, 'train_val_split': 0.95}
+2018-07-02 06:22:36,958 - tensorflow - INFO - Exists ../data/files_processed/question_cleaned.csv
+2018-07-02 06:22:36,958 - tensorflow - INFO - Exists ../data/files_processed/word_embedding.npy
+2018-07-02 06:22:36,958 - tensorflow - INFO - Exists ../data/files_processed/q2w.pkl
+2018-07-02 06:22:36,959 - tensorflow - INFO - Exists ../data/tfrecords/word_train.tfrecord
+2018-07-02 06:22:36,959 - tensorflow - INFO - Exists ../data/tfrecords/word_val.tfrecord
+2018-07-02 06:22:36,959 - tensorflow - INFO - Exists ../data/tfrecords/word_test.tfrecord
+2018-07-02 06:22:37,001 - tensorflow - INFO - Using config: {'_model_dir': '../model/baseline_word_ckpt', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 1, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x116974fd0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-07-02 06:22:37,437 - tensorflow - INFO - Calling model_fn.
+2018-07-02 06:22:40,086 - tensorflow - INFO - 
+[<tf.Variable 'representation/bidirectional_rnn/fw/lstm_cell/kernel:0' shape=(450, 600) dtype=float32_ref>,
+ <tf.Variable 'representation/bidirectional_rnn/fw/lstm_cell/bias:0' shape=(600,) dtype=float32_ref>,
+ <tf.Variable 'representation/bidirectional_rnn/bw/lstm_cell/kernel:0' shape=(450, 600) dtype=float32_ref>,
+ <tf.Variable 'representation/bidirectional_rnn/bw/lstm_cell/bias:0' shape=(600,) dtype=float32_ref>,
+ <tf.Variable 'attention_pooling/alpha:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'attention_pooling/dense/kernel:0' shape=(300, 100) dtype=float32_ref>,
+ <tf.Variable 'attention_pooling/dense/bias:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'query_context_attention/v:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'query_context_attention/dense/kernel:0' shape=(300, 100) dtype=float32_ref>,
+ <tf.Variable 'query_context_attention/dense/bias:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'query_context_attention/dense_1/kernel:0' shape=(300, 100) dtype=float32_ref>,
+ <tf.Variable 'query_context_attention/dense_1/bias:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense/kernel:0' shape=(1400, 100) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense/bias:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense_1/kernel:0' shape=(100, 20) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense_1/bias:0' shape=(20,) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense_2/kernel:0' shape=(20, 1) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense_2/bias:0' shape=(1,) dtype=float32_ref>]
+2018-07-02 06:22:44,298 - tensorflow - INFO - Done calling model_fn.
+2018-07-02 06:22:44,300 - tensorflow - INFO - Create CheckpointSaverHook.
+2018-07-02 06:22:51,174 - tensorflow - INFO - Graph was finalized.
+2018-07-02 06:22:51,606 - tensorflow - INFO - Running local_init_op.
+2018-07-02 06:22:51,641 - tensorflow - INFO - Done running local_init_op.
+2018-07-02 06:23:20,537 - tensorflow - INFO - Saving checkpoints for 1 into ../model/baseline_word_ckpt/model.ckpt.
+2018-07-02 06:23:23,919 - tensorflow - INFO - loss = 0.75182784, step = 1
+2018-07-02 06:23:23,920 - tensorflow - INFO - lr = 0.001
+2018-07-02 06:24:01,912 - tensorflow - INFO - global_step/sec: 2.63204
+2018-07-02 06:24:01,913 - tensorflow - INFO - loss = 0.37274086, step = 101 (37.994 sec)
+2018-07-02 06:24:01,913 - tensorflow - INFO - lr = 0.0009930925 (37.993 sec)
+2018-07-02 06:24:37,089 - tensorflow - INFO - global_step/sec: 2.84274
+2018-07-02 06:24:37,090 - tensorflow - INFO - loss = 0.33699986, step = 201 (35.177 sec)
+2018-07-02 06:24:37,091 - tensorflow - INFO - lr = 0.0009862328 (35.178 sec)
+2018-07-02 06:25:14,131 - tensorflow - INFO - global_step/sec: 2.69966
+2018-07-02 06:25:14,132 - tensorflow - INFO - loss = 0.33939084, step = 301 (37.042 sec)
+2018-07-02 06:25:14,132 - tensorflow - INFO - lr = 0.0009794204 (37.042 sec)
+2018-07-02 06:25:50,580 - tensorflow - INFO - global_step/sec: 2.74354
+2018-07-02 06:25:50,582 - tensorflow - INFO - loss = 0.27418262, step = 401 (36.450 sec)
+2018-07-02 06:25:50,582 - tensorflow - INFO - lr = 0.00097265496 (36.450 sec)
+2018-07-02 06:26:29,549 - tensorflow - INFO - global_step/sec: 2.56613
+2018-07-02 06:26:29,550 - tensorflow - INFO - loss = 0.26622066, step = 501 (38.968 sec)
+2018-07-02 06:26:29,551 - tensorflow - INFO - lr = 0.00096593634 (38.968 sec)
+2018-07-02 06:27:07,306 - tensorflow - INFO - global_step/sec: 2.64855
+2018-07-02 06:27:07,307 - tensorflow - INFO - loss = 0.32476684, step = 601 (37.757 sec)
+2018-07-02 06:27:07,308 - tensorflow - INFO - lr = 0.0009592642 (37.757 sec)
+2018-07-02 06:27:44,272 - tensorflow - INFO - global_step/sec: 2.70518
+2018-07-02 06:27:44,273 - tensorflow - INFO - loss = 0.20495805, step = 701 (36.966 sec)
+2018-07-02 06:27:44,273 - tensorflow - INFO - lr = 0.000952638 (36.966 sec)
+2018-07-02 06:28:21,587 - tensorflow - INFO - global_step/sec: 2.67988
+2018-07-02 06:28:21,588 - tensorflow - INFO - loss = 0.2848097, step = 801 (37.315 sec)
+2018-07-02 06:28:21,588 - tensorflow - INFO - lr = 0.0009460577 (37.315 sec)
+2018-07-02 06:28:59,226 - tensorflow - INFO - global_step/sec: 2.65677
+2018-07-02 06:28:59,227 - tensorflow - INFO - loss = 0.2575912, step = 901 (37.639 sec)
+2018-07-02 06:28:59,228 - tensorflow - INFO - lr = 0.0009395228 (37.639 sec)
+2018-07-02 06:29:36,942 - tensorflow - INFO - global_step/sec: 2.65145
+2018-07-02 06:29:36,943 - tensorflow - INFO - loss = 0.22695279, step = 1001 (37.715 sec)
+2018-07-02 06:29:36,943 - tensorflow - INFO - lr = 0.000933033 (37.715 sec)
+2018-07-02 06:30:14,835 - tensorflow - INFO - global_step/sec: 2.63898
+2018-07-02 06:30:14,836 - tensorflow - INFO - loss = 0.21978961, step = 1101 (37.894 sec)
+2018-07-02 06:30:14,837 - tensorflow - INFO - lr = 0.0009265881 (37.894 sec)
+2018-07-02 06:30:52,055 - tensorflow - INFO - global_step/sec: 2.68677
+2018-07-02 06:30:52,056 - tensorflow - INFO - loss = 0.31992918, step = 1201 (37.220 sec)
+2018-07-02 06:30:52,056 - tensorflow - INFO - lr = 0.0009201877 (37.220 sec)
+2018-07-02 06:31:30,395 - tensorflow - INFO - global_step/sec: 2.60823
+2018-07-02 06:31:30,397 - tensorflow - INFO - loss = 0.3241703, step = 1301 (38.341 sec)
+2018-07-02 06:31:30,397 - tensorflow - INFO - lr = 0.0009138315 (38.341 sec)
+2018-07-02 06:32:07,355 - tensorflow - INFO - global_step/sec: 2.70564
+2018-07-02 06:32:07,356 - tensorflow - INFO - loss = 0.31571066, step = 1401 (36.959 sec)
+2018-07-02 06:32:07,356 - tensorflow - INFO - lr = 0.0009075192 (36.959 sec)
+2018-07-02 06:32:44,306 - tensorflow - INFO - global_step/sec: 2.70625
+2018-07-02 06:32:44,307 - tensorflow - INFO - loss = 0.24579692, step = 1501 (36.952 sec)
+2018-07-02 06:32:44,308 - tensorflow - INFO - lr = 0.0009012505 (36.952 sec)
+2018-07-02 06:33:20,622 - tensorflow - INFO - Saving checkpoints for 1598 into ../model/baseline_word_ckpt/model.ckpt.
+2018-07-02 06:33:25,247 - tensorflow - INFO - global_step/sec: 2.44255
+2018-07-02 06:33:25,248 - tensorflow - INFO - loss = 0.30195028, step = 1601 (40.941 sec)
+2018-07-02 06:33:25,248 - tensorflow - INFO - lr = 0.0008950251 (40.941 sec)
+2018-07-02 06:34:02,459 - tensorflow - INFO - global_step/sec: 2.68731
+2018-07-02 06:34:02,460 - tensorflow - INFO - loss = 0.20292526, step = 1701 (37.212 sec)
+2018-07-02 06:34:02,461 - tensorflow - INFO - lr = 0.00088884274 (37.212 sec)
+2018-07-02 06:34:40,214 - tensorflow - INFO - global_step/sec: 2.64864
+2018-07-02 06:34:40,216 - tensorflow - INFO - loss = 0.3412214, step = 1801 (37.756 sec)
+2018-07-02 06:34:40,216 - tensorflow - INFO - lr = 0.00088270305 (37.756 sec)
+2018-07-02 06:35:13,686 - tensorflow - INFO - Saving checkpoints for 1889 into ../model/baseline_word_ckpt/model.ckpt.
+2018-07-02 06:35:17,901 - tensorflow - INFO - Loss for final step: 0.4068426.
+2018-07-02 06:35:18,001 - tensorflow - INFO - Calling model_fn.
+2018-07-02 06:35:20,466 - tensorflow - INFO - Done calling model_fn.
+2018-07-02 06:35:20,702 - tensorflow - INFO - Graph was finalized.
+2018-07-02 06:35:20,703 - tensorflow - INFO - Restoring parameters from ../model/baseline_word_ckpt/model.ckpt-1889
+2018-07-02 06:35:20,832 - tensorflow - INFO - Running local_init_op.
+2018-07-02 06:35:20,856 - tensorflow - INFO - Done running local_init_op.
+2018-07-02 06:35:36,081 - tensorflow - INFO - 
+Val Log Loss: 0.225
+
+2018-07-02 06:35:36,207 - tensorflow - INFO - Calling model_fn.
+2018-07-02 06:35:39,015 - tensorflow - INFO - 
+[<tf.Variable 'representation/bidirectional_rnn/fw/lstm_cell/kernel:0' shape=(450, 600) dtype=float32_ref>,
+ <tf.Variable 'representation/bidirectional_rnn/fw/lstm_cell/bias:0' shape=(600,) dtype=float32_ref>,
+ <tf.Variable 'representation/bidirectional_rnn/bw/lstm_cell/kernel:0' shape=(450, 600) dtype=float32_ref>,
+ <tf.Variable 'representation/bidirectional_rnn/bw/lstm_cell/bias:0' shape=(600,) dtype=float32_ref>,
+ <tf.Variable 'attention_pooling/alpha:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'attention_pooling/dense/kernel:0' shape=(300, 100) dtype=float32_ref>,
+ <tf.Variable 'attention_pooling/dense/bias:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'query_context_attention/v:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'query_context_attention/dense/kernel:0' shape=(300, 100) dtype=float32_ref>,
+ <tf.Variable 'query_context_attention/dense/bias:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'query_context_attention/dense_1/kernel:0' shape=(300, 100) dtype=float32_ref>,
+ <tf.Variable 'query_context_attention/dense_1/bias:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense/kernel:0' shape=(1400, 100) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense/bias:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense_1/kernel:0' shape=(100, 20) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense_1/bias:0' shape=(20,) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense_2/kernel:0' shape=(20, 1) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense_2/bias:0' shape=(1,) dtype=float32_ref>]
+2018-07-02 06:35:43,616 - tensorflow - INFO - Done calling model_fn.
+2018-07-02 06:35:43,618 - tensorflow - INFO - Create CheckpointSaverHook.
+2018-07-02 06:35:44,174 - tensorflow - INFO - Graph was finalized.
+2018-07-02 06:35:44,175 - tensorflow - INFO - Restoring parameters from ../model/baseline_word_ckpt/model.ckpt-1889
+2018-07-02 06:35:44,449 - tensorflow - INFO - Running local_init_op.
+2018-07-02 06:35:44,492 - tensorflow - INFO - Done running local_init_op.
+2018-07-02 06:36:17,383 - tensorflow - INFO - Saving checkpoints for 1890 into ../model/baseline_word_ckpt/model.ckpt.
+2018-07-02 06:36:21,046 - tensorflow - INFO - loss = 0.16862684, step = 1890
+2018-07-02 06:36:21,046 - tensorflow - INFO - lr = 0.0008772744
+2018-07-02 06:37:02,091 - tensorflow - INFO - global_step/sec: 2.43631
+2018-07-02 06:37:02,092 - tensorflow - INFO - loss = 0.21497454, step = 1990 (41.046 sec)
+2018-07-02 06:37:02,092 - tensorflow - INFO - lr = 0.0008712146 (41.046 sec)
+2018-07-02 06:37:39,183 - tensorflow - INFO - global_step/sec: 2.69601
+2018-07-02 06:37:39,184 - tensorflow - INFO - loss = 0.2676115, step = 2090 (37.092 sec)
+2018-07-02 06:37:39,184 - tensorflow - INFO - lr = 0.0008651967 (37.092 sec)
+2018-07-02 06:38:16,581 - tensorflow - INFO - global_step/sec: 2.67391
+2018-07-02 06:38:16,582 - tensorflow - INFO - loss = 0.18992755, step = 2190 (37.398 sec)
+2018-07-02 06:38:16,583 - tensorflow - INFO - lr = 0.0008592204 (37.398 sec)
+2018-07-02 06:38:54,786 - tensorflow - INFO - global_step/sec: 2.61743
+2018-07-02 06:38:54,787 - tensorflow - INFO - loss = 0.38140744, step = 2290 (38.205 sec)
+2018-07-02 06:38:54,788 - tensorflow - INFO - lr = 0.0008532853 (38.205 sec)
+2018-07-02 06:39:32,559 - tensorflow - INFO - global_step/sec: 2.64741
+2018-07-02 06:39:32,560 - tensorflow - INFO - loss = 0.22575751, step = 2390 (37.773 sec)
+2018-07-02 06:39:32,560 - tensorflow - INFO - lr = 0.0008473912 (37.773 sec)
+2018-07-02 06:40:09,820 - tensorflow - INFO - global_step/sec: 2.6838
+2018-07-02 06:40:09,821 - tensorflow - INFO - loss = 0.16908976, step = 2490 (37.261 sec)
+2018-07-02 06:40:09,821 - tensorflow - INFO - lr = 0.0008415379 (37.261 sec)
+2018-07-02 06:40:48,451 - tensorflow - INFO - global_step/sec: 2.58854
+2018-07-02 06:40:48,453 - tensorflow - INFO - loss = 0.1504918, step = 2590 (38.632 sec)
+2018-07-02 06:40:48,453 - tensorflow - INFO - lr = 0.00083572493 (38.632 sec)
+2018-07-02 06:41:26,668 - tensorflow - INFO - global_step/sec: 2.61663
+2018-07-02 06:41:26,669 - tensorflow - INFO - loss = 0.2189601, step = 2690 (38.217 sec)
+2018-07-02 06:41:26,670 - tensorflow - INFO - lr = 0.0008299522 (38.216 sec)
+2018-07-02 06:42:03,777 - tensorflow - INFO - global_step/sec: 2.69478
+2018-07-02 06:42:03,779 - tensorflow - INFO - loss = 0.2732334, step = 2790 (37.109 sec)
+2018-07-02 06:42:03,779 - tensorflow - INFO - lr = 0.00082421926 (37.109 sec)
+2018-07-02 06:42:41,976 - tensorflow - INFO - global_step/sec: 2.61791
+2018-07-02 06:42:41,977 - tensorflow - INFO - loss = 0.20662637, step = 2890 (38.198 sec)
+2018-07-02 06:42:41,977 - tensorflow - INFO - lr = 0.00081852596 (38.198 sec)
+2018-07-02 06:43:17,966 - tensorflow - INFO - global_step/sec: 2.77849
+2018-07-02 06:43:17,967 - tensorflow - INFO - loss = 0.22506604, step = 2990 (35.991 sec)
+2018-07-02 06:43:17,968 - tensorflow - INFO - lr = 0.00081287196 (35.991 sec)
+2018-07-02 06:43:55,081 - tensorflow - INFO - global_step/sec: 2.69438
+2018-07-02 06:43:55,082 - tensorflow - INFO - loss = 0.21115458, step = 3090 (37.114 sec)
+2018-07-02 06:43:55,082 - tensorflow - INFO - lr = 0.0008072571 (37.115 sec)
+2018-07-02 06:44:31,887 - tensorflow - INFO - global_step/sec: 2.7169
+2018-07-02 06:44:31,889 - tensorflow - INFO - loss = 0.1861594, step = 3190 (36.807 sec)
+2018-07-02 06:44:31,889 - tensorflow - INFO - lr = 0.00080168096 (36.807 sec)
+2018-07-02 06:45:08,266 - tensorflow - INFO - global_step/sec: 2.74888
+2018-07-02 06:45:08,267 - tensorflow - INFO - loss = 0.10766448, step = 3290 (36.378 sec)
+2018-07-02 06:45:08,267 - tensorflow - INFO - lr = 0.0007961433 (36.378 sec)
+2018-07-02 06:45:43,990 - tensorflow - INFO - global_step/sec: 2.79924
+2018-07-02 06:45:43,991 - tensorflow - INFO - loss = 0.23223399, step = 3390 (35.724 sec)
+2018-07-02 06:45:43,991 - tensorflow - INFO - lr = 0.000790644 (35.724 sec)
+2018-07-02 06:46:17,468 - tensorflow - INFO - Saving checkpoints for 3481 into ../model/baseline_word_ckpt/model.ckpt.
+2018-07-02 06:46:24,526 - tensorflow - INFO - global_step/sec: 2.46691
+2018-07-02 06:46:24,527 - tensorflow - INFO - loss = 0.27479434, step = 3490 (40.537 sec)
+2018-07-02 06:46:24,528 - tensorflow - INFO - lr = 0.0007851826 (40.537 sec)
+2018-07-02 06:47:02,278 - tensorflow - INFO - global_step/sec: 2.64892
+2018-07-02 06:47:02,279 - tensorflow - INFO - loss = 0.16942748, step = 3590 (37.752 sec)
+2018-07-02 06:47:02,279 - tensorflow - INFO - lr = 0.0007797589 (37.752 sec)
+2018-07-02 06:47:40,810 - tensorflow - INFO - global_step/sec: 2.59524
+2018-07-02 06:47:40,811 - tensorflow - INFO - loss = 0.21987885, step = 3690 (38.532 sec)
+2018-07-02 06:47:40,811 - tensorflow - INFO - lr = 0.0007743727 (38.532 sec)
+2018-07-02 06:48:12,736 - tensorflow - INFO - Saving checkpoints for 3778 into ../model/baseline_word_ckpt/model.ckpt.
+2018-07-02 06:48:16,245 - tensorflow - INFO - Loss for final step: 0.014383186.
+2018-07-02 06:48:16,329 - tensorflow - INFO - Calling model_fn.
+2018-07-02 06:48:19,069 - tensorflow - INFO - Done calling model_fn.
+2018-07-02 06:48:19,308 - tensorflow - INFO - Graph was finalized.
+2018-07-02 06:48:19,308 - tensorflow - INFO - Restoring parameters from ../model/baseline_word_ckpt/model.ckpt-3778
+2018-07-02 06:48:19,435 - tensorflow - INFO - Running local_init_op.
+2018-07-02 06:48:19,458 - tensorflow - INFO - Done running local_init_op.
+2018-07-02 06:48:34,794 - tensorflow - INFO - 
+Val Log Loss: 0.197
+
+2018-07-02 06:48:34,934 - tensorflow - INFO - Calling model_fn.
+2018-07-02 06:48:37,515 - tensorflow - INFO - 
+[<tf.Variable 'representation/bidirectional_rnn/fw/lstm_cell/kernel:0' shape=(450, 600) dtype=float32_ref>,
+ <tf.Variable 'representation/bidirectional_rnn/fw/lstm_cell/bias:0' shape=(600,) dtype=float32_ref>,
+ <tf.Variable 'representation/bidirectional_rnn/bw/lstm_cell/kernel:0' shape=(450, 600) dtype=float32_ref>,
+ <tf.Variable 'representation/bidirectional_rnn/bw/lstm_cell/bias:0' shape=(600,) dtype=float32_ref>,
+ <tf.Variable 'attention_pooling/alpha:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'attention_pooling/dense/kernel:0' shape=(300, 100) dtype=float32_ref>,
+ <tf.Variable 'attention_pooling/dense/bias:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'query_context_attention/v:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'query_context_attention/dense/kernel:0' shape=(300, 100) dtype=float32_ref>,
+ <tf.Variable 'query_context_attention/dense/bias:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'query_context_attention/dense_1/kernel:0' shape=(300, 100) dtype=float32_ref>,
+ <tf.Variable 'query_context_attention/dense_1/bias:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense/kernel:0' shape=(1400, 100) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense/bias:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense_1/kernel:0' shape=(100, 20) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense_1/bias:0' shape=(20,) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense_2/kernel:0' shape=(20, 1) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense_2/bias:0' shape=(1,) dtype=float32_ref>]
+2018-07-02 06:48:41,676 - tensorflow - INFO - Done calling model_fn.
+2018-07-02 06:48:41,678 - tensorflow - INFO - Create CheckpointSaverHook.
+2018-07-02 06:48:42,218 - tensorflow - INFO - Graph was finalized.
+2018-07-02 06:48:42,219 - tensorflow - INFO - Restoring parameters from ../model/baseline_word_ckpt/model.ckpt-3778
+2018-07-02 06:48:42,468 - tensorflow - INFO - Running local_init_op.
+2018-07-02 06:48:42,507 - tensorflow - INFO - Done running local_init_op.
+2018-07-02 06:49:14,002 - tensorflow - INFO - Saving checkpoints for 3779 into ../model/baseline_word_ckpt/model.ckpt.
+2018-07-02 06:49:17,969 - tensorflow - INFO - loss = 0.14232896, step = 3779
+2018-07-02 06:49:17,970 - tensorflow - INFO - lr = 0.00076961034
+2018-07-02 06:49:58,513 - tensorflow - INFO - global_step/sec: 2.46642
+2018-07-02 06:49:58,515 - tensorflow - INFO - loss = 0.21145675, step = 3879 (40.546 sec)
+2018-07-02 06:49:58,515 - tensorflow - INFO - lr = 0.00076429424 (40.545 sec)
+2018-07-02 06:50:35,969 - tensorflow - INFO - global_step/sec: 2.66982
+2018-07-02 06:50:35,970 - tensorflow - INFO - loss = 0.16172846, step = 3979 (37.455 sec)
+2018-07-02 06:50:35,970 - tensorflow - INFO - lr = 0.00075901486 (37.455 sec)
+2018-07-02 06:51:15,535 - tensorflow - INFO - global_step/sec: 2.52736
+2018-07-02 06:51:15,536 - tensorflow - INFO - loss = 0.18254285, step = 4079 (39.567 sec)
+2018-07-02 06:51:15,537 - tensorflow - INFO - lr = 0.000753772 (39.567 sec)
+2018-07-02 06:51:50,928 - tensorflow - INFO - global_step/sec: 2.82543
+2018-07-02 06:51:50,929 - tensorflow - INFO - loss = 0.19672847, step = 4179 (35.393 sec)
+2018-07-02 06:51:50,930 - tensorflow - INFO - lr = 0.0007485653 (35.393 sec)
+2018-07-02 06:52:26,636 - tensorflow - INFO - global_step/sec: 2.80053
+2018-07-02 06:52:26,637 - tensorflow - INFO - loss = 0.16270687, step = 4279 (35.708 sec)
+2018-07-02 06:52:26,637 - tensorflow - INFO - lr = 0.0007433946 (35.708 sec)
+2018-07-02 06:53:06,042 - tensorflow - INFO - global_step/sec: 2.53768
+2018-07-02 06:53:06,043 - tensorflow - INFO - loss = 0.21178466, step = 4379 (39.406 sec)
+2018-07-02 06:53:06,044 - tensorflow - INFO - lr = 0.0007382596 (39.406 sec)
+2018-07-02 06:53:44,881 - tensorflow - INFO - global_step/sec: 2.57473
+2018-07-02 06:53:44,882 - tensorflow - INFO - loss = 0.10751264, step = 4479 (38.839 sec)
+2018-07-02 06:53:44,882 - tensorflow - INFO - lr = 0.00073316006 (38.839 sec)
+2018-07-02 06:54:24,993 - tensorflow - INFO - global_step/sec: 2.49298
+2018-07-02 06:54:24,995 - tensorflow - INFO - loss = 0.17727163, step = 4579 (40.113 sec)
+2018-07-02 06:54:24,995 - tensorflow - INFO - lr = 0.00072809577 (40.113 sec)
+2018-07-02 06:55:05,105 - tensorflow - INFO - global_step/sec: 2.49305
+2018-07-02 06:55:05,107 - tensorflow - INFO - loss = 0.17874342, step = 4679 (40.112 sec)
+2018-07-02 06:55:05,108 - tensorflow - INFO - lr = 0.00072306645 (40.113 sec)
+2018-07-02 06:55:43,695 - tensorflow - INFO - global_step/sec: 2.59133
+2018-07-02 06:55:43,696 - tensorflow - INFO - loss = 0.23136887, step = 4779 (38.590 sec)
+2018-07-02 06:55:43,697 - tensorflow - INFO - lr = 0.0007180718 (38.589 sec)
+2018-07-02 06:56:21,356 - tensorflow - INFO - global_step/sec: 2.65525
+2018-07-02 06:56:21,358 - tensorflow - INFO - loss = 0.16548215, step = 4879 (37.661 sec)
+2018-07-02 06:56:21,358 - tensorflow - INFO - lr = 0.0007131117 (37.662 sec)
+2018-07-02 06:57:00,907 - tensorflow - INFO - global_step/sec: 2.52841
+2018-07-02 06:57:00,908 - tensorflow - INFO - loss = 0.15268807, step = 4979 (39.550 sec)
+2018-07-02 06:57:00,908 - tensorflow - INFO - lr = 0.00070818595 (39.550 sec)
+2018-07-02 06:57:39,868 - tensorflow - INFO - global_step/sec: 2.56668
+2018-07-02 06:57:39,869 - tensorflow - INFO - loss = 0.14188407, step = 5079 (38.961 sec)
+2018-07-02 06:57:39,869 - tensorflow - INFO - lr = 0.0007032941 (38.961 sec)
+2018-07-02 06:58:16,547 - tensorflow - INFO - global_step/sec: 2.72633
+2018-07-02 06:58:16,548 - tensorflow - INFO - loss = 0.20334254, step = 5179 (36.679 sec)
+2018-07-02 06:58:16,549 - tensorflow - INFO - lr = 0.0006984361 (36.679 sec)
+2018-07-02 06:58:53,576 - tensorflow - INFO - global_step/sec: 2.70057
+2018-07-02 06:58:53,577 - tensorflow - INFO - loss = 0.2328347, step = 5279 (37.029 sec)
+2018-07-02 06:58:53,578 - tensorflow - INFO - lr = 0.0006936116 (37.029 sec)
+2018-07-02 06:59:14,254 - tensorflow - INFO - Saving checkpoints for 5332 into ../model/baseline_word_ckpt/model.ckpt.
+2018-07-02 06:59:36,729 - tensorflow - INFO - global_step/sec: 2.31735
+2018-07-02 06:59:36,730 - tensorflow - INFO - loss = 0.14673236, step = 5379 (43.153 sec)
+2018-07-02 06:59:36,731 - tensorflow - INFO - lr = 0.0006888205 (43.153 sec)
+2018-07-02 07:00:13,548 - tensorflow - INFO - global_step/sec: 2.71597
+2018-07-02 07:00:13,549 - tensorflow - INFO - loss = 0.22100711, step = 5479 (36.819 sec)
+2018-07-02 07:00:13,550 - tensorflow - INFO - lr = 0.0006840625 (36.819 sec)
+2018-07-02 07:00:50,151 - tensorflow - INFO - global_step/sec: 2.73204
+2018-07-02 07:00:50,152 - tensorflow - INFO - loss = 0.16366553, step = 5579 (36.603 sec)
+2018-07-02 07:00:50,153 - tensorflow - INFO - lr = 0.00067933736 (36.603 sec)
+2018-07-02 07:01:21,312 - tensorflow - INFO - Saving checkpoints for 5667 into ../model/baseline_word_ckpt/model.ckpt.
+2018-07-02 07:01:24,824 - tensorflow - INFO - Loss for final step: 0.06307357.
+2018-07-02 07:01:24,907 - tensorflow - INFO - Calling model_fn.
+2018-07-02 07:01:27,404 - tensorflow - INFO - Done calling model_fn.
+2018-07-02 07:01:27,635 - tensorflow - INFO - Graph was finalized.
+2018-07-02 07:01:27,635 - tensorflow - INFO - Restoring parameters from ../model/baseline_word_ckpt/model.ckpt-5667
+2018-07-02 07:01:27,761 - tensorflow - INFO - Running local_init_op.
+2018-07-02 07:01:27,784 - tensorflow - INFO - Done running local_init_op.
+2018-07-02 07:01:42,870 - tensorflow - INFO - 
+Val Log Loss: 0.188
+
+2018-07-02 07:01:42,994 - tensorflow - INFO - Calling model_fn.
+2018-07-02 07:01:45,965 - tensorflow - INFO - 
+[<tf.Variable 'representation/bidirectional_rnn/fw/lstm_cell/kernel:0' shape=(450, 600) dtype=float32_ref>,
+ <tf.Variable 'representation/bidirectional_rnn/fw/lstm_cell/bias:0' shape=(600,) dtype=float32_ref>,
+ <tf.Variable 'representation/bidirectional_rnn/bw/lstm_cell/kernel:0' shape=(450, 600) dtype=float32_ref>,
+ <tf.Variable 'representation/bidirectional_rnn/bw/lstm_cell/bias:0' shape=(600,) dtype=float32_ref>,
+ <tf.Variable 'attention_pooling/alpha:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'attention_pooling/dense/kernel:0' shape=(300, 100) dtype=float32_ref>,
+ <tf.Variable 'attention_pooling/dense/bias:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'query_context_attention/v:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'query_context_attention/dense/kernel:0' shape=(300, 100) dtype=float32_ref>,
+ <tf.Variable 'query_context_attention/dense/bias:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'query_context_attention/dense_1/kernel:0' shape=(300, 100) dtype=float32_ref>,
+ <tf.Variable 'query_context_attention/dense_1/bias:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense/kernel:0' shape=(1400, 100) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense/bias:0' shape=(100,) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense_1/kernel:0' shape=(100, 20) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense_1/bias:0' shape=(20,) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense_2/kernel:0' shape=(20, 1) dtype=float32_ref>,
+ <tf.Variable 'aggregation/dense_2/bias:0' shape=(1,) dtype=float32_ref>]
+2018-07-02 07:01:49,746 - tensorflow - INFO - Done calling model_fn.
+2018-07-02 07:01:49,748 - tensorflow - INFO - Create CheckpointSaverHook.
+2018-07-02 07:01:50,276 - tensorflow - INFO - Graph was finalized.
+2018-07-02 07:01:50,277 - tensorflow - INFO - Restoring parameters from ../model/baseline_word_ckpt/model.ckpt-5667
+2018-07-02 07:01:50,516 - tensorflow - INFO - Running local_init_op.
+2018-07-02 07:01:50,552 - tensorflow - INFO - Done running local_init_op.
+2018-07-02 07:02:20,456 - tensorflow - INFO - Saving checkpoints for 5668 into ../model/baseline_word_ckpt/model.ckpt.
+2018-07-02 07:02:24,069 - tensorflow - INFO - loss = 0.14331958, step = 5668
+2018-07-02 07:02:24,070 - tensorflow - INFO - lr = 0.00067515945
+2018-07-02 07:03:03,734 - tensorflow - INFO - global_step/sec: 2.52112
+2018-07-02 07:03:03,735 - tensorflow - INFO - loss = 0.075679034, step = 5768 (39.666 sec)
+2018-07-02 07:03:03,736 - tensorflow - INFO - lr = 0.0006704958 (39.666 sec)
+2018-07-02 07:03:39,969 - tensorflow - INFO - global_step/sec: 2.75974
+2018-07-02 07:03:39,970 - tensorflow - INFO - loss = 0.10808261, step = 5868 (36.236 sec)
+2018-07-02 07:03:39,971 - tensorflow - INFO - lr = 0.0006658643 (36.235 sec)
+2018-07-02 07:04:18,175 - tensorflow - INFO - global_step/sec: 2.61742
+2018-07-02 07:04:18,176 - tensorflow - INFO - loss = 0.12092216, step = 5968 (38.205 sec)
+2018-07-02 07:04:18,176 - tensorflow - INFO - lr = 0.0006612648 (38.205 sec)
+2018-07-02 07:04:54,818 - tensorflow - INFO - global_step/sec: 2.72904
+2018-07-02 07:04:54,819 - tensorflow - INFO - loss = 0.2326835, step = 6068 (36.643 sec)
+2018-07-02 07:04:54,819 - tensorflow - INFO - lr = 0.00065669714 (36.643 sec)
+2018-07-02 07:05:32,174 - tensorflow - INFO - global_step/sec: 2.67695
+2018-07-02 07:05:32,175 - tensorflow - INFO - loss = 0.12716238, step = 6168 (37.356 sec)
+2018-07-02 07:05:32,175 - tensorflow - INFO - lr = 0.00065216096 (37.356 sec)
+2018-07-02 07:06:09,018 - tensorflow - INFO - global_step/sec: 2.71415
+2018-07-02 07:06:09,019 - tensorflow - INFO - loss = 0.17834345, step = 6268 (36.843 sec)
+2018-07-02 07:06:09,019 - tensorflow - INFO - lr = 0.00064765615 (36.843 sec)
+2018-07-02 07:06:48,705 - tensorflow - INFO - global_step/sec: 2.51967
+2018-07-02 07:06:48,706 - tensorflow - INFO - loss = 0.07249758, step = 6368 (39.688 sec)
+2018-07-02 07:06:48,707 - tensorflow - INFO - lr = 0.0006431825 (39.688 sec)
+2018-07-02 07:07:26,444 - tensorflow - INFO - global_step/sec: 2.64978
+2018-07-02 07:07:26,445 - tensorflow - INFO - loss = 0.13287926, step = 6468 (37.739 sec)
+2018-07-02 07:07:26,446 - tensorflow - INFO - lr = 0.00063873973 (37.739 sec)
+2018-07-02 07:08:06,749 - tensorflow - INFO - global_step/sec: 2.48111
+2018-07-02 07:08:06,750 - tensorflow - INFO - loss = 0.16778442, step = 6568 (40.305 sec)
+2018-07-02 07:08:06,751 - tensorflow - INFO - lr = 0.00063432765 (40.305 sec)
+2018-07-02 07:08:46,053 - tensorflow - INFO - global_step/sec: 2.54425
+2018-07-02 07:08:46,054 - tensorflow - INFO - loss = 0.19397207, step = 6668 (39.304 sec)
+2018-07-02 07:08:46,054 - tensorflow - INFO - lr = 0.000629946 (39.304 sec)
+2018-07-02 07:09:24,317 - tensorflow - INFO - global_step/sec: 2.6134
+2018-07-02 07:09:24,319 - tensorflow - INFO - loss = 0.087611765, step = 6768 (38.265 sec)
+2018-07-02 07:09:24,319 - tensorflow - INFO - lr = 0.00062559464 (38.265 sec)
+2018-07-02 07:10:02,252 - tensorflow - INFO - global_step/sec: 2.63609
+2018-07-02 07:10:02,254 - tensorflow - INFO - loss = 0.11116667, step = 6868 (37.935 sec)
+2018-07-02 07:10:02,254 - tensorflow - INFO - lr = 0.00062127336 (37.935 sec)
+2018-07-02 07:10:38,970 - tensorflow - INFO - global_step/sec: 2.72352
+2018-07-02 07:10:38,971 - tensorflow - INFO - loss = 0.18736503, step = 6968 (36.717 sec)
+2018-07-02 07:10:38,971 - tensorflow - INFO - lr = 0.0006169819 (36.717 sec)
+2018-07-02 07:11:15,002 - tensorflow - INFO - global_step/sec: 2.7753
+2018-07-02 07:11:15,003 - tensorflow - INFO - loss = 0.09795796, step = 7068 (36.032 sec)
+2018-07-02 07:11:15,003 - tensorflow - INFO - lr = 0.0006127201 (36.032 sec)
+2018-07-02 07:11:54,805 - tensorflow - INFO - global_step/sec: 2.51237
+2018-07-02 07:11:54,806 - tensorflow - INFO - loss = 0.1420429, step = 7168 (39.803 sec)
+2018-07-02 07:11:54,806 - tensorflow - INFO - lr = 0.00060848775 (39.803 sec)
+2018-07-02 07:12:20,626 - tensorflow - INFO - Saving checkpoints for 7236 into ../model/baseline_word_ckpt/model.ckpt.
+2018-07-02 07:12:35,467 - tensorflow - INFO - global_step/sec: 2.45929
+2018-07-02 07:12:35,468 - tensorflow - INFO - loss = 0.11951109, step = 7268 (40.662 sec)
+2018-07-02 07:12:35,469 - tensorflow - INFO - lr = 0.00060428464 (40.663 sec)
+2018-07-02 07:13:13,821 - tensorflow - INFO - global_step/sec: 2.6073
+2018-07-02 07:13:13,822 - tensorflow - INFO - loss = 0.1470107, step = 7368 (38.354 sec)
+2018-07-02 07:13:13,823 - tensorflow - INFO - lr = 0.0006001105 (38.354 sec)
+2018-07-02 07:13:51,603 - tensorflow - INFO - global_step/sec: 2.64672
+2018-07-02 07:13:51,605 - tensorflow - INFO - loss = 0.11905549, step = 7468 (37.782 sec)
+2018-07-02 07:13:51,605 - tensorflow - INFO - lr = 0.00059596525 (37.782 sec)
+2018-07-02 07:14:24,449 - tensorflow - INFO - Saving checkpoints for 7556 into ../model/baseline_word_ckpt/model.ckpt.
+2018-07-02 07:14:28,999 - tensorflow - INFO - Loss for final step: 0.0007450625.
+2018-07-02 07:14:29,113 - tensorflow - INFO - Calling model_fn.
+2018-07-02 07:14:32,072 - tensorflow - INFO - Done calling model_fn.
+2018-07-02 07:14:32,327 - tensorflow - INFO - Graph was finalized.
+2018-07-02 07:14:32,328 - tensorflow - INFO - Restoring parameters from ../model/baseline_word_ckpt/model.ckpt-7556
+2018-07-02 07:14:32,480 - tensorflow - INFO - Running local_init_op.
+2018-07-02 07:14:32,512 - tensorflow - INFO - Done running local_init_op.
+2018-07-02 07:14:47,764 - tensorflow - INFO - 
+Val Log Loss: 0.183
+
+2018-07-02 07:14:47,870 - tensorflow - INFO - Calling model_fn.
+2018-07-02 07:14:50,916 - tensorflow - INFO - Done calling model_fn.
+2018-07-02 07:14:51,205 - tensorflow - INFO - Graph was finalized.
+2018-07-02 07:14:51,206 - tensorflow - INFO - Restoring parameters from ../model/baseline_word_ckpt/model.ckpt-7556
+2018-07-02 07:14:51,371 - tensorflow - INFO - Running local_init_op.
+2018-07-02 07:14:51,399 - tensorflow - INFO - Done running local_init_op.

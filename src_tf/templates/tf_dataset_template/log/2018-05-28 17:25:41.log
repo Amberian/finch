@@ -1,0 +1,34 @@
+2018-05-28 17:25:54,340 - tensorflow - INFO - Epoch 1 | Step 1 | Loss 0.698 | LR: 0.0050
+2018-05-28 17:26:00,332 - tensorflow - INFO - Epoch 1 | Step 50 | Loss 0.491 | LR: 0.0047
+2018-05-28 17:26:06,693 - tensorflow - INFO - Epoch 1 | Step 100 | Loss 0.487 | LR: 0.0045
+2018-05-28 17:26:13,182 - tensorflow - INFO - Epoch 1 | Step 150 | Loss 0.388 | LR: 0.0042
+2018-05-28 17:26:19,793 - tensorflow - INFO - Epoch 1 | Step 200 | Loss 0.327 | LR: 0.0040
+2018-05-28 17:26:26,187 - tensorflow - INFO - Epoch 1 | Step 250 | Loss 0.244 | LR: 0.0038
+2018-05-28 17:26:32,679 - tensorflow - INFO - Epoch 1 | Step 300 | Loss 0.228 | LR: 0.0035
+2018-05-28 17:26:39,202 - tensorflow - INFO - Epoch 1 | Step 350 | Loss 0.325 | LR: 0.0033
+2018-05-28 17:26:45,742 - tensorflow - INFO - Epoch 1 | Step 400 | Loss 0.313 | LR: 0.0032
+2018-05-28 17:26:52,293 - tensorflow - INFO - Epoch 1 | Step 450 | Loss 0.445 | LR: 0.0030
+2018-05-28 17:26:58,789 - tensorflow - INFO - Epoch 1 | Step 500 | Loss 0.300 | LR: 0.0028
+2018-05-28 17:27:05,230 - tensorflow - INFO - Epoch 1 | Step 550 | Loss 0.237 | LR: 0.0027
+2018-05-28 17:27:11,665 - tensorflow - INFO - Epoch 1 | Step 600 | Loss 0.303 | LR: 0.0025
+2018-05-28 17:27:18,058 - tensorflow - INFO - Epoch 1 | Step 650 | Loss 0.277 | LR: 0.0024
+2018-05-28 17:27:24,464 - tensorflow - INFO - Epoch 1 | Step 700 | Loss 0.296 | LR: 0.0022
+2018-05-28 17:27:30,804 - tensorflow - INFO - Epoch 1 | Step 750 | Loss 0.385 | LR: 0.0021
+2018-05-28 17:28:06,277 - tensorflow - INFO - Epoch 1 | Validation Accuracy: 0.8935
+2018-05-28 17:28:08,841 - tensorflow - INFO - Epoch 2 | Step 800 | Loss 0.193 | LR: 0.0020
+2018-05-28 17:28:15,280 - tensorflow - INFO - Epoch 2 | Step 850 | Loss 0.063 | LR: 0.0019
+2018-05-28 17:28:21,708 - tensorflow - INFO - Epoch 2 | Step 900 | Loss 0.126 | LR: 0.0018
+2018-05-28 17:28:28,405 - tensorflow - INFO - Epoch 2 | Step 950 | Loss 0.123 | LR: 0.0017
+2018-05-28 17:28:35,538 - tensorflow - INFO - Epoch 2 | Step 1000 | Loss 0.340 | LR: 0.0016
+2018-05-28 17:28:42,016 - tensorflow - INFO - Epoch 2 | Step 1050 | Loss 0.324 | LR: 0.0015
+2018-05-28 17:28:48,704 - tensorflow - INFO - Epoch 2 | Step 1100 | Loss 0.131 | LR: 0.0014
+2018-05-28 17:28:55,686 - tensorflow - INFO - Epoch 2 | Step 1150 | Loss 0.251 | LR: 0.0013
+2018-05-28 17:29:02,345 - tensorflow - INFO - Epoch 2 | Step 1200 | Loss 0.127 | LR: 0.0013
+2018-05-28 17:29:08,921 - tensorflow - INFO - Epoch 2 | Step 1250 | Loss 0.246 | LR: 0.0012
+2018-05-28 17:29:15,458 - tensorflow - INFO - Epoch 2 | Step 1300 | Loss 0.296 | LR: 0.0011
+2018-05-28 17:29:22,226 - tensorflow - INFO - Epoch 2 | Step 1350 | Loss 0.141 | LR: 0.0011
+2018-05-28 17:29:29,340 - tensorflow - INFO - Epoch 2 | Step 1400 | Loss 0.156 | LR: 0.0010
+2018-05-28 17:29:35,885 - tensorflow - INFO - Epoch 2 | Step 1450 | Loss 0.070 | LR: 0.0009
+2018-05-28 17:29:42,633 - tensorflow - INFO - Epoch 2 | Step 1500 | Loss 0.104 | LR: 0.0009
+2018-05-28 17:29:48,994 - tensorflow - INFO - Epoch 2 | Step 1550 | Loss 0.233 | LR: 0.0008
+2018-05-28 17:30:21,178 - tensorflow - INFO - Epoch 2 | Validation Accuracy: 0.8938

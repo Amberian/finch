@@ -1,0 +1,49 @@
+2018-06-06 21:20:25,706 - tensorflow - INFO - Using default config.
+2018-06-06 21:20:25,708 - tensorflow - WARNING - Using temporary folder as model directory: /var/folders/sx/fv0r97j96fz8njp14dt5g7940000gn/T/tmptfxd53s6
+2018-06-06 21:20:25,709 - tensorflow - INFO - Using config: {'_model_dir': '/var/folders/sx/fv0r97j96fz8njp14dt5g7940000gn/T/tmptfxd53s6', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x112c15a20>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2018-06-06 21:20:25,747 - tensorflow - INFO - Calling model_fn.
+2018-06-06 21:20:29,304 - tensorflow - INFO - Done calling model_fn.
+2018-06-06 21:20:29,306 - tensorflow - INFO - Create CheckpointSaverHook.
+2018-06-06 21:20:30,541 - tensorflow - INFO - Graph was finalized.
+2018-06-06 21:20:30,638 - tensorflow - INFO - Running local_init_op.
+2018-06-06 21:20:30,643 - tensorflow - INFO - Done running local_init_op.
+2018-06-06 21:20:32,813 - tensorflow - INFO - Saving checkpoints for 1 into /var/folders/sx/fv0r97j96fz8njp14dt5g7940000gn/T/tmptfxd53s6/model.ckpt.
+2018-06-06 21:20:33,529 - tensorflow - INFO - loss = 0.68846023, step = 1
+2018-06-06 21:20:33,530 - tensorflow - INFO - lr = 0.005
+2018-06-06 21:20:46,178 - tensorflow - INFO - global_step/sec: 7.9057
+2018-06-06 21:20:46,179 - tensorflow - INFO - loss = 0.25607425, step = 101 (12.650 sec)
+2018-06-06 21:20:46,179 - tensorflow - INFO - lr = 0.004288479 (12.649 sec)
+2018-06-06 21:20:58,337 - tensorflow - INFO - global_step/sec: 8.22411
+2018-06-06 21:20:58,338 - tensorflow - INFO - loss = 0.56711906, step = 201 (12.159 sec)
+2018-06-06 21:20:58,338 - tensorflow - INFO - lr = 0.0036782112 (12.159 sec)
+2018-06-06 21:21:12,926 - tensorflow - INFO - global_step/sec: 6.85475
+2018-06-06 21:21:12,927 - tensorflow - INFO - loss = 0.17936078, step = 301 (14.588 sec)
+2018-06-06 21:21:12,927 - tensorflow - INFO - lr = 0.0031547868 (14.589 sec)
+2018-06-06 21:21:26,447 - tensorflow - INFO - global_step/sec: 7.39584
+2018-06-06 21:21:26,448 - tensorflow - INFO - loss = 0.16831627, step = 401 (13.521 sec)
+2018-06-06 21:21:26,448 - tensorflow - INFO - lr = 0.0027058476 (13.521 sec)
+2018-06-06 21:21:40,158 - tensorflow - INFO - global_step/sec: 7.29322
+2018-06-06 21:21:40,159 - tensorflow - INFO - loss = 0.31505504, step = 501 (13.711 sec)
+2018-06-06 21:21:40,159 - tensorflow - INFO - lr = 0.0023207942 (13.711 sec)
+2018-06-06 21:21:53,450 - tensorflow - INFO - global_step/sec: 7.52323
+2018-06-06 21:21:53,451 - tensorflow - INFO - loss = 0.2478042, step = 601 (13.292 sec)
+2018-06-06 21:21:53,451 - tensorflow - INFO - lr = 0.0019905358 (13.292 sec)
+2018-06-06 21:22:06,430 - tensorflow - INFO - global_step/sec: 7.70418
+2018-06-06 21:22:06,431 - tensorflow - INFO - loss = 0.14722109, step = 701 (12.980 sec)
+2018-06-06 21:22:06,431 - tensorflow - INFO - lr = 0.0017072745 (12.980 sec)
+2018-06-06 21:22:16,915 - tensorflow - INFO - Saving checkpoints for 782 into /var/folders/sx/fv0r97j96fz8njp14dt5g7940000gn/T/tmptfxd53s6/model.ckpt.
+2018-06-06 21:22:17,614 - tensorflow - INFO - Loss for final step: 0.22656795.
+2018-06-06 21:22:17,639 - tensorflow - INFO - Calling model_fn.
+2018-06-06 21:22:17,854 - tensorflow - INFO - Done calling model_fn.
+2018-06-06 21:22:17,995 - tensorflow - INFO - Graph was finalized.
+2018-06-06 21:22:17,996 - tensorflow - INFO - Restoring parameters from /var/folders/sx/fv0r97j96fz8njp14dt5g7940000gn/T/tmptfxd53s6/model.ckpt-782
+2018-06-06 21:22:18,020 - tensorflow - INFO - Running local_init_op.
+2018-06-06 21:22:18,023 - tensorflow - INFO - Done running local_init_op.
+2018-06-06 21:22:48,385 - tensorflow - INFO - 
+             precision    recall  f1-score   support
+
+          0       0.91      0.87      0.89     12500
+          1       0.88      0.91      0.90     12500
+
+avg / total       0.89      0.89      0.89     25000
+
