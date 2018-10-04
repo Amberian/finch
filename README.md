@@ -83,13 +83,9 @@
 
     * Bi-RNN + CRF &nbsp; &nbsp; [Notebook](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/src_nlp/tensorflow/tf-data-api/pos_birnn_crf_test.ipynb)
 
-    * CNN + Attention + CRF &nbsp; &nbsp; [Notebook](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/src_nlp/tensorflow/tf-data-api/cnn_attn_seq_label_pos_test.ipynb)
-
 * Chinese Segmentation（中文分词）
 
     * Bi-RNN + CRF &nbsp; &nbsp; [Notebook](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/src_nlp/tensorflow/tf-data-api/chseg_birnn_crf_test.ipynb)
-
-    * CNN + Attention + CRF &nbsp; &nbsp; [Notebook](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/src_nlp/tensorflow/tf-data-api/cnn_attn_seq_label_chseg_test.ipynb)
 
 #### Sequence to Sequence（序列到序列）
 <img src="https://github.com/zhedongzheng/finch/blob/master/src_nlp/assets/decoration_1.png" height='100'>
